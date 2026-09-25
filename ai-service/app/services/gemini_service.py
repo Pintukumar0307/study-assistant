@@ -12,7 +12,7 @@ class GeminiService:
             settings = get_settings()
             genai.configure(api_key=settings.gemini_api_key)
             self._model = genai.GenerativeModel(
-                model_name="gemini-1.5-flash",
+                model_name="gemini-3.5-flash-lite",
                 generation_config=genai.GenerationConfig(
                     temperature=0.3,
                     top_p=0.95,
